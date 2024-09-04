@@ -1,0 +1,5 @@
+com/recargapay/user_service/controller/UserController.class
+com/recargapay/user_service/repository/UserRepository.class
+com/recargapay/user_service/model/User.class
+com/recargapay/user_service/UserServiceApplication.class
+com/recargapay/user_service/exception/ResourceNotFoundException.class
