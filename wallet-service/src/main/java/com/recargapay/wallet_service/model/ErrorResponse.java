@@ -1,4 +1,4 @@
-package com.recargapay.user_service.model;
+package com.recargapay.wallet_service.model;
 
 public class ErrorResponse {
     private String error;

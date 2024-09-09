@@ -1,0 +1,26 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8
+    container_name: wallet-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: walletdb
+    ports:
+      - "3302:3306"
+  wallet-service:
+    build: .
+    container_name: wallet-service
+    ports:
+      - "8082:8080"
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/walletdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+
+networks:
+  default:
+    external:
+      name: recargapay

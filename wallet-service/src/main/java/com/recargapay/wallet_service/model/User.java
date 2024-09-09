@@ -1,4 +1,4 @@
-package com.recargapay.user_service.model;
+package com.recargapay.wallet_service.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,14 +6,16 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Column;
 
-@Entity
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @JsonProperty("idUser")
     private Long idUser;
 
-    @Column(unique = true)
+    @JsonProperty("nameUser")
     private String nameUser;
 
     public Long getIdUser() {

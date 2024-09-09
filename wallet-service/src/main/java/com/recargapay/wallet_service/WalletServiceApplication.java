@@ -1,4 +1,4 @@
-package com.example.wallet_service;
+package com.recargapay.wallet_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

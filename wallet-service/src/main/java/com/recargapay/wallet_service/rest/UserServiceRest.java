@@ -1,15 +1,25 @@
-package com.recargapay.wallet_service.feign;
+package com.recargapay.wallet_service.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import com.recargapay.wallet_service.feign.interfaces.UserServiceClientInterface;
+import org.springframework.stereotype.Component;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
 import com.recargapay.wallet_service.model.User;
+import com.recargapay.wallet_service.exception.UserNotFoundException;
 
-public class UserServiceClient {
+@Component
+public class UserServiceRest {
 
 	@Autowired
-	private UserServiceClient userServiceClient;
+	private RestTemplate restTemplate;
 
-	public User getUser(Long userId) {
-		return userServiceClient.getUserById(userId);
+	public User getUserById(Long userId) {
+		String url = "http://user-service:8080/users/" + userId;
+		ResponseEntity<User> response = restTemplate.getForEntity(url, User.class);
+		if (response.getStatusCode().is2xxSuccessful()) {
+			return response.getBody();
+		} else {
+			throw new UserNotFoundException("User with ID " + userId + " not found.");
+		}
 	}
 }
