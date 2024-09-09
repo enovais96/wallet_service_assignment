@@ -1,6 +1,6 @@
 /home/eduardo/desafios/enovais96/user-service/src/main/java/com/recargapay/user_service/model/ErrorResponse.java
-/home/eduardo/desafios/enovais96/user-service/src/main/java/com/recargapay/user_service/exception/ResourceNotFoundException.java
 /home/eduardo/desafios/enovais96/user-service/src/main/java/com/recargapay/user_service/model/User.java
 /home/eduardo/desafios/enovais96/user-service/src/main/java/com/recargapay/user_service/UserServiceApplication.java
 /home/eduardo/desafios/enovais96/user-service/src/main/java/com/recargapay/user_service/repository/UserRepository.java
+/home/eduardo/desafios/enovais96/user-service/src/main/java/com/recargapay/user_service/service/UserService.java
 /home/eduardo/desafios/enovais96/user-service/src/main/java/com/recargapay/user_service/controller/UserController.java
