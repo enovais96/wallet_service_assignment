@@ -21,7 +21,7 @@ Using Java, Spring Boot and MySQL, I created this project to perform simple oper
   	9 - Run the command docker start wallet-service.
   	10 - Run the command docker start transaction-service.
   	11 - Finally, execute the command docker ps to verify that you see 6 containers running, as shown below:
-	![image](https://github.com/user-attachments/assets/e65534cd-b3c8-415e-8e78-d481befa6a77)
+![image](https://github.com/user-attachments/assets/e65534cd-b3c8-415e-8e78-d481befa6a77)
 
 	
 # How to test
