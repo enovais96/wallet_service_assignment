@@ -11,17 +11,17 @@ Using Java, Spring Boot and MySQL, I created this project to perform simple oper
 
 # How to Install and Run
 	1 - Run the command docker network create recargapay.
-  2 - In the terminal, navigate to the user-service folder and run docker-compose up --build.
-  3 - In the terminal, navigate to the wallet-service folder and run docker-compose up --build.
-  4 - In the terminal, navigate to the transaction-service folder and run docker-compose up --build.
-  5 - Run the command docker start user-db.
-  6 - Run the command docker start wallet-db.
-  7 - Run the command docker start transaction-db.
-  8 - Run the command docker start user-service.
-  9 - Run the command docker start wallet-service.
-  10 - Run the command docker start transaction-service.
-  11 - Finally, execute the command docker ps to verify that you see 6 containers running, as shown below:
-![image](https://github.com/user-attachments/assets/e65534cd-b3c8-415e-8e78-d481befa6a77)
+  	2 - In the terminal, navigate to the user-service folder and run docker-compose up --build.
+  	3 - In the terminal, navigate to the wallet-service folder and run docker-compose up --build.
+  	4 - In the terminal, navigate to the transaction-service folder and run docker-compose up --build.
+  	5 - Run the command docker start user-db.
+  	6 - Run the command docker start wallet-db.
+  	7 - Run the command docker start transaction-db.
+  	8 - Run the command docker start user-service.
+  	9 - Run the command docker start wallet-service.
+  	10 - Run the command docker start transaction-service.
+  	11 - Finally, execute the command docker ps to verify that you see 6 containers running, as shown below:
+	![image](https://github.com/user-attachments/assets/e65534cd-b3c8-415e-8e78-d481befa6a77)
 
 	
 # How to test
