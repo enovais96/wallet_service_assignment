@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.recargapay.wallet_service.model.Wallet;
 import com.recargapay.wallet_service.model.ErrorResponse;
-import com.recargapay.wallet_service.model.User;
+import com.recargapay.wallet_service.json.UserJson;
 import com.recargapay.wallet_service.repository.WalletRepository;
 import com.recargapay.wallet_service.rest.UserServiceRest;
 
@@ -29,19 +29,18 @@ public class WalletService {
     }
 
     public Wallet createWallet(Wallet wallet) {
-        User user;
+        UserJson userJson;
         try {
-            user = userServiceRest.getUserById(wallet.getIdUser());
+            userJson = userServiceRest.getUserById(wallet.getIdUser());
         } catch (Exception e) {
-            // Retorne uma resposta padrão ou um objeto de erro
             throw new RuntimeException("Failed to get user from user service");
         }
 
-        if (user == null) {
+        if (userJson == null) {
             throw new RuntimeException("User not found");
         }
 
-        wallet.setNameUser(user.getNameUser());
+        wallet.setNameUser(userJson.getNameUser());
         return walletRepository.save(wallet);
     }
 

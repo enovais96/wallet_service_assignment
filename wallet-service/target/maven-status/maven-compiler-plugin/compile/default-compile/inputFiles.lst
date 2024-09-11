@@ -2,7 +2,7 @@
 /home/eduardo/desafios/enovais96/wallet-service/src/main/java/com/recargapay/wallet_service/WalletServiceApplication.java
 /home/eduardo/desafios/enovais96/wallet-service/src/main/java/com/recargapay/wallet_service/config/AppConfig.java
 /home/eduardo/desafios/enovais96/wallet-service/src/main/java/com/recargapay/wallet_service/model/Wallet.java
-/home/eduardo/desafios/enovais96/wallet-service/src/main/java/com/recargapay/wallet_service/model/User.java
+/home/eduardo/desafios/enovais96/wallet-service/src/main/java/com/recargapay/wallet_service/json/UserJson.java
 /home/eduardo/desafios/enovais96/wallet-service/src/main/java/com/recargapay/wallet_service/service/WalletService.java
 /home/eduardo/desafios/enovais96/wallet-service/src/main/java/com/recargapay/wallet_service/repository/WalletRepository.java
 /home/eduardo/desafios/enovais96/wallet-service/src/main/java/com/recargapay/wallet_service/model/ErrorResponse.java

@@ -12,7 +12,9 @@ public class Wallet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idWallet;
+    @Column(nullable = false)
     private Long idUser;
+    @Column(nullable = false)
     private String nameUser;
 
     public Long getIdWallet() {

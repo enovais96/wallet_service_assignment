@@ -2,9 +2,9 @@ com/recargapay/wallet_service/model/Wallet.class
 com/recargapay/wallet_service/controller/WalletController.class
 com/recargapay/wallet_service/WalletServiceApplication.class
 com/recargapay/wallet_service/repository/WalletRepository.class
-com/recargapay/wallet_service/model/User.class
 com/recargapay/wallet_service/config/AppConfig.class
 com/recargapay/wallet_service/exception/UserNotFoundException.class
 com/recargapay/wallet_service/rest/UserServiceRest.class
+com/recargapay/wallet_service/json/UserJson.class
 com/recargapay/wallet_service/service/WalletService.class
 com/recargapay/wallet_service/model/ErrorResponse.class

@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8
+    container_name: transaction-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: transactiondb
+    ports:
+      - "3303:3306"
+  transaction-service:
+    build: .
+    container_name: transaction-service
+    ports:
+      - "8083:8080"
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/transactiondb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+
+networks:
+  default:
+    external:
+      name: recargapay
